@@ -1,0 +1,71 @@
+-- Spring Framework -- 
+- Main Purpose- Dependency Injection
+
+Web Layer calls a Business Layer
+
+Web Layer dependent on Business Layer which is dependent on Data Layer
+
+Constructor used in removing tight coupling
+
+@Component
+Start managing instances of which classes
+
+@Autowired
+Will start looking for its dependeny in its components (@components)
+
+Drawback of Autowired - Add multiple dependencies makes it difficult to manage
+
+Terminology
+Beans - Objects that are managed by Spring Framework
+
+Autowiring - Process in which it identifies the dependencies and manages them
+
+Inversion of Control - Control away from class and giving to Spring framework
+
+IOC Container - Anything that implements IOC 
+
+Application Context - Where all the beans are created and managed
+
+GroupID - Package name
+ArtifactID - Class Name
+
+Created a Binary Search program which requires Sorting
+Sorting can be any method 
+To remove the dependency of a particular soritng technique we decouple by making Interface
+
+@Primary 
+If two/more components it uses primary class to execute
+
+@Qualifier("") - Used to give a name to the component after @Component
+When calling just add @Qualifier again - See bubble and quick
+
+@ComponentScan("package name")
+Uses string array for multiple packages
+{"",""}
+
+BEAN SCOPE
+Singleton - One bean per ApplicationContext
+
+Prototype - New bean when requested
+To have different beans
+After @Component add @Scope("prototype")
+Or instead of hardcoding use ConfigurableBeanFactory.
+Request- One bean per HTTP requested
+Session - One bean per HTTP Session
+
+@Controller - Spring MVC, webb applications
+Define controller in the web layer
+
+@Service
+Business Layer
+
+@Repository
+Data Layer (For database etc)
+
+Use specific annotation - Allows you to classify your components into different categories
+
+-- Junit -- 
+
+
+
+-- Spring Boot -- 

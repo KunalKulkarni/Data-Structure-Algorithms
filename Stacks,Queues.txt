@@ -1,0 +1,15 @@
+Stack is abstract data type which demonstrates Last in first out (LIFO) behavior. We will implement same behavior using Array.
+
+Stack
+Although java provides implementation for all abstract data types such as Stack, Queue and LinkedList but it is always good idea to understand basic data structures and implement them yourself.
+Please note that Array implementation of Stack is not dynamic in nature. You can implement Stack through linked list for dynamic behavior.
+
+Stack supports following basic operations :
+
+	-push: Push element to the top of the Stack.This operation will increase size of stack by 1.
+	-pop: Remove element from the top of the Stack and returns the deleleted Object.This operation will decrease size of stack by 1.
+	-isEmpty: Check if Stack is empty or not.
+	-isFull: Check if Stack is full or not.
+	-peek: Returns top element from the stack without removing it.
+	
+Please note that time complexity of all above operation is constant i.e. O(1)
